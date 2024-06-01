@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="mainDiv">
+        <div class="inputWrapper">
+            <div class="inpWrap1_1">
+                <button class="createListBtn">Create new list</button>
+            </div>
+            <div class="inpWrap2">
+                <input type="text" placeholder="содержимое элемента" id="txtFirstElemName">
+            </div>
+           
+        </div>
+       
+        <div class="inputWrapper">
+            <div class="inpWrap1">
+                <input name="inputGroup1" type="radio" value="insertSameLevelListItem" id="rdBtnInsSameLvl"/>
+                <label for="rdBtnInsSameLvl">Вставить эл-т на том же уровне</label>
+            </div>
+            <div class="inpWrap2">
+                <input type="text" placeholder="содержимое элемента" id="txtInsSameLvl">
+            </div>
+        </div>
+       
+        <div class="inputWrapper">
+            <div class="inpWrap1">
+                <input name="inputGroup1" type="radio" value="insertNestedListItem" id="rdBtnInsNest"/>
+                <label for="rdBtnInsNest">Вставить дочерний эл-т (если таковых нет)</label>
+            </div>
+            <div class="inpWrap2">
+                <input type="text" placeholder="содержимое элемента" id="txtBtnInsNest">
+            </div>
+        </div>
+     
+        <div class="inputWrapper">
+            <div class="inpWrap1">
+                <input name="inputGroup1" type="radio" value="changeTextContent" id="rdBtnChangeTxtContent"/>
+                <label for="rdBtnChangeTxtContent">Изменить содержимое пункта</label>
+            </div>
+            <div class="inpWrap2">
+                <input type="text" placeholder="содержимое элемента" id="txtChangeTxtContent">
+            </div>           
+        </div>
+      
+        <div class="inputWrapper">
+            <div class="inpWrap1">
+                <input name="inputGroup1" type="radio" value="insertSameLevelSlctPos" id="rdBtnInsSameLvlSlctPos"/>
+                <label for="rdBtnInsSameLvlSlctPos">Вставить эл-т на том же уровне перед выбранным элементом</label>
+            </div>
+            <div class="inpWrap2">
+                <input type="text" placeholder="содержимое элемента" id="txtInsSameLvlSlctPos">
+            </div>
+        </div>
+      
+        <div class="inputWrapper">
+            <div class="inpWrap1">
+                <input name="inputGroup1" type="radio" value="deleteElem" id="rdBtnDeleteElem"/>
+                <label for="rdBtnDeleteElem">Удалить элемент списка</label>
+            </div>
+                 
+        </div>    
+        <div class="inputWrapperList"></div>
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>
